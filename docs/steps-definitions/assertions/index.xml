@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Assertions on</title><link>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/</link><description>Recent content in Assertions on</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 25 Jan 2022 14:40:56 +0100</lastBuildDate><atom:link href="https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/index.xml" rel="self" type="application/rss+xml"/><item><title>HTTP response body</title><link>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/response-body/</link><pubDate>Mon, 27 Mar 2023 08:48:57 +0000</pubDate><guid>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/response-body/</guid><description>the response body should (not )?have format &amp;ldquo;(JSON|YAML|XML|HTML|plain text)&amp;rdquo; #
+This step allows to check whether given last HTTP(s) response body has/doesn&amp;rsquo;t have given format.
+First argument format &amp;quot;(JSON|YAML|XML|HTML|plain text)&amp;quot; should be one of available data formats.
+Example:
+And the response body should have format &amp;quot;JSON&amp;quot; And the response body should not have format &amp;quot;YAML&amp;quot; And the response body should have format &amp;quot;XML&amp;quot; And the response body should have format &amp;quot;plain text&amp;quot; And the response body should have format &amp;quot;HTML&amp;quot; the response body should be valid according to schema &amp;ldquo;([^&amp;rdquo;]*)&amp;quot; #
+This step allows to check wheter given last HTTP(s) response body is valid according to schema.</description></item><item><title>HTTP response body nodes</title><link>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/response-body-nodes/</link><pubDate>Mon, 27 Mar 2023 08:48:57 +0000</pubDate><guid>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/response-body-nodes/</guid><description>Overview #
+Following steps allows to query nodes. Querying nodes is handled by PathFinders utility service. Default setup allows to use following JSON/XML/YAML/HTML path engines:
+JSON:
+tidwall/gjson oliveagle/jsonpath antchfx/jsonquery YAML:
+goccy/go-yaml XML:
+antchfx/xmlquery HTML:
+antchfx/htmlquery the &amp;ldquo;(JSON|YAML|XML|HTML)&amp;rdquo; response should (not )?have node &amp;ldquo;([^&amp;rdquo;]*)&amp;quot; #
+This step checks whether last HTTP(s) response body does have/doesn&amp;rsquo;t have given JSON/YAML/XML/HTML node.
+Examples:
+And the &amp;quot;JSON&amp;quot; response should have node &amp;quot;data.0.firstName&amp;quot; But the &amp;quot;JSON&amp;quot; response should not have node &amp;quot;$.</description></item><item><title>HTTP response headers</title><link>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/headers/</link><pubDate>Mon, 27 Mar 2023 08:48:57 +0000</pubDate><guid>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/headers/</guid><description>the response should (not )?have header &amp;ldquo;([^&amp;rdquo;]*)&amp;quot; #
+This step checks whether last HTTP(s) response has/doesn&amp;rsquo;t have given header. Argument have header &amp;quot;([^&amp;quot;]*)&amp;quot; is case sensitive.
+Examples:
+And the response should have header &amp;quot;Content-Length&amp;quot; And the response should not have header &amp;quot;Content-Type&amp;quot; the response should have header &amp;ldquo;([^&amp;rdquo;])&amp;quot; of value &amp;ldquo;([^&amp;rdquo;])&amp;quot; #
+This step checks whether last HTTP(s) response has given header of given value.
+First argument header &amp;quot;([^&amp;quot;]*)&amp;quot; of should be name of header and is case-sensitive, second argument of value &amp;quot;([^&amp;quot;]*)&amp;quot; should be value of header, it may contain template values.</description></item><item><title>HTTP response status code</title><link>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/status-code/</link><pubDate>Mon, 27 Mar 2023 08:48:57 +0000</pubDate><guid>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/status-code/</guid><description>the response status code should (not )?be (\d+) #
+This step checks against last HTTP(s) response status code.
+Examples:
+Then the response status code should be 201 But the response status code should not be 200</description></item><item><title/><link>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/cookies/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://doks-child-theme.netlify.app/docs/steps-definitions/assertions/cookies/</guid><description>a&amp;mdash; title: &amp;ldquo;HTTP response Cookies&amp;rdquo; description: &amp;ldquo;HTTP response Cookies.&amp;rdquo; lead: &amp;ldquo;HTTP response Cookies.&amp;rdquo; date: 2023-03-27T08:48:57+00:00 lastmod: 2023-03-27T08:48:57+00:00 draft: false weight: 100 toc: true #
+the response should (not )?have cookie &amp;ldquo;([^&amp;rdquo;]*)&amp;quot; #
+This step checks whether last HTTP(s) response has/doesn&amp;rsquo;t have given cookie.
+The only one argument have cookie &amp;quot;([^&amp;quot;]*)&amp;quot; should be name of cookie.
+Examples:
+And the response should have cookie &amp;quot;session_id&amp;quot; And the response should not have cookie &amp;quot;csrf_token&amp;quot; the response should have cookie &amp;ldquo;([^&amp;rdquo;])&amp;quot; of value &amp;ldquo;([^&amp;rdquo;])&amp;quot; #
+This step checks whether last HTTP(s) response has given cookie of given value.</description></item></channel></rss>
