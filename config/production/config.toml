@@ -1,1 +1,2 @@
-canonifyURLs = false
+canonifyURLs = true
+baseurl = "https://pawelwritescode.github.io/godog-http-api.github.io/"
