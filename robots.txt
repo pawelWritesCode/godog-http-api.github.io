@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pawelwritescode.github.io/godog-http-api.github.io/sitemap.xml
+Sitemap: https://pawelwritescode.github.io/godog-http-api.documentation/sitemap.xml
